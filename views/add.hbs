@@ -1,0 +1,19 @@
+<h1>Добавить курс</h1>
+<form action="/add" method="POST">
+    <div class="input-field">
+          <input type="text" id="title" name="title" class="validate" required>
+          <label for="title">Название курса</label>
+          <span class="helper-text" data-error="Введите название курса"></span>
+    </div>
+    <div class="input-field">
+          <input type="number" id="price" name="price" class="validate" required>
+          <label for="price">Цена</label>
+          <span class="helper-text" data-error="Введите стоимость курса"></span>
+    </div>
+    <div class="input-field">
+          <input type="text" id="img" name="img" class="validate" required>
+          <label for="img">URL картинки</label>
+          <span class="helper-text" data-error="Введите URL"></span>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Добавить</button>
+</form>
